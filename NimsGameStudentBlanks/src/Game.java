@@ -28,6 +28,9 @@ public class Game {
             Scanner sc = new Scanner(System.in);
             System.out.print("How many pieces do you want to take?: ");
             take = sc.nextInt();
+            if(!isLegal(take)){
+                System.out.println("please enter an integer less than or equal to the pile");
+            }
             
             
             
